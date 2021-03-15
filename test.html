@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="test.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<title>thatnicolas.com</title>
+		<script
+  		src="https://code.jquery.com/jquery-3.6.0.min.js"
+  		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  		crossorigin="anonymous"></script>
+	</head>
+	<body onload="currentSelected()">
+		<header id="topo">
+			<div id="container">
+					<div id="logo">
+						<div id="txtlogo"> 
+							<img src="nicon.png" id="nicon">
+							<p>Nicolas Ian</p>
+						</div>
+							<p id="mottologo">Smooth; Responsive; Beautiful;</p>
+					</div>
+						<div id=#menu>
+							<nav>
+								<ul>
+									<li id="btnHome" active><a href="#">início</a></li>
+									<li onclick="selectorAbout()" id="btnAbout"><a href="#">sobre mim</a></li>
+									<li onclick="selectorAbout()" id="btnPort"><a href="#">portifolio</a></li>
+									<li onclick="selectorAbout()" id="btnCont"><a href="#">contato</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+			</div>
+		</header>
+	
+		<section id="main">
+			<div class="containervideo">
+				<video width="1920px" height="1080px" preload autoplay muted loop>
+					<source src="estrelas.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div id= "animPrincipal">
+				<div id="mao"></div>
+			</div>
+			<div id="boxTexto">
+				<div id="text">
+					Olá, meu nome é <p>Nícolas.</p>
+					Eu sou um desenvolvedor
+					<p>Front-end.</p>
+				</div>
+			</div>
+			<a href="#" id="bounceInUp">Sobre mim</a>
+		</section>
+			
+		<section id="about">
+			<h1 id="aboutTitle" data-aos="zoom-in-right" data-aos-duration="750">Sobre mim</h1>
+			<div id="line" data-aos="zoom-in-left" data-aos-delay="500"></div>
+			
+			<div id="diamondWrapper">
+				
+				<div class="diamond1"></div>
+				<div class="diamond2"></div>
+				<div class="diamond3"></div>
+				<div class="diamond4"></div>
+			</div>
+			<div id="diamondTextBox1">
+				<h1 class="diamondTitles" data-aos="fade-right" data-aos-duration="500">Veloz</h1>
+				<p class="diamondTexts" data-aos="slide-right" data-aos-duration="750">Tempo de loading rápido e interações fluidas são uma prioridade.</p>
+			</div>
+			<div id="diamondTextBox2">
+				<h1 class="diamondTitles" data-aos="fade-right" data-aos-duration="500">Responsivo</h1>
+				<p class="diamondTexts" data-aos="slide-right" data-aos-duration="750">Meus layouts funcionarão em qualquer dispositivo, grande ou pequeno.</p>
+			</div>
+			<div id="diamondTextBox3">
+				<h1 class="diamondTitles" data-aos="fade-left" data-aos-duration="500">Intuitivo</h1>
+				<p class="diamondTexts" data-aos="slide-left" data-aos-duration="750">Grande preferência por facilidade de uso e uma interface intuitiva.</p>
+			</div>
+			<div id="diamondTextBox4">
+				<h1 class="diamondTitles" data-aos="fade-left" data-aos-duration="500">Original</h1>
+				<p class="diamondTexts" data-aos="slide-left" data-aos-duration="750">Eu adoro destaque, gosto de dar vida para páginas de uma forma original.</p>
+			</div>
+			
+			<div id="textoEu">
+				<h1 data-aos="fade-up-right" data-aos-duration="500">Prazer, eu sou o Nícolas</h1>
+				<div id="line2" data-aos="zoom-in-left" data-aos-delay="500"></div>
+				
+				<p data-aos="fade-right" data-aos-duration="750">Eu sou uma pessoa com muitos talentos em toda área da tecnologia, dentre todos, duas características se destacam: resolução de problemas e criatividade.
+				Quando era mais jovem, fui gamer profissional em um jogo que usava muitos scripts em .lua, e se não soubesse desenvolver corretamente, estaria em desvantagem, a partir disso fui adquirindo diversos conhecimentos conforme a necessidade(e pretendo adquirir muito mais), provavelmente foi o que engatilhou minha paixão por desenvolvimento. Movido a motivação e entusiasmo, eu me inspiro facilmente. Sou assertivo, racional, sou competitivo comigo mesmo, espírito multi-talentos com uma habilidade natural de entreter e inspirar.   
+				Eu nunca estou satisfeito de apenas ter ideias. Ao invés, eu tenho uma quase impulsiva vontade de agir baseado nelas. Minha energia me mantém na busca de muitos interesses, hobbies e diversas áreas de estudo. Sou autodidata, eu aprendo rápido e sou capaz de aprender novas habilidades além de trabalhar em diversos projetos e funções com certa facilidade.</p>
+			</div>
+			<div id="containerbotaoProximo"><a href="#" id="botaoProximo"></a></div>
+		</section>
+		<section id="portifolio">
+			<h1 id="portTitulo" data-aos="zoom-in-right" data-aos-duration="500">Portifólio</h1>
+			<div id="line3" data-aos="zoom-in-left" data-aos-delay="750"></div>
+				<div id="projetos">
+					<h1 id="projetosTitulo" data-aos="fade-right" data-aos-duration="500">Projetos</h1>
+					<div id="line4" data-aos="zoom-in-left" data-aos-delay="750"></div>
+				</div>
+				<div id="habilidades">
+					<h1 id="habTitulo" data-aos="fade-left" data-aos-duration="500">Habilidades & Conhecimentos</h1>
+					<div id="line5" data-aos="zoom-in-right" data-aos-delay="750"></div>
+					<div id="htmlIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="htmlImg" src="html.png">
+					</div>
+					<div id="cssIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="cssImg" src="css.png">
+					</div>
+					<div id="jsIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="jovaImg" src="jova.png">
+					</div>
+					<div id="bsIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="bsImg" src="bs.png">
+					</div>
+					<div id="psIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="psImg" src="ps.png">
+					</div>
+					<div id="reactIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="reactImg" src="react.png">
+					</div>
+					<div id="wordpressIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="wordpressImg" src="wordpress.png">
+					</div>
+					<div id="nodeIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="nodeImg" src="node.png">
+					</div>
+					<div id="jqIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="jqImg" src="jq.png">
+					</div>
+					<div id="gitIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="gitImg" src="git.png">
+					</div>
+					<div id="vueIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="vueImg" src="vue.png">
+					</div>
+					<div id="mysIcon" data-aos="zoom-in-up" data-aos-duration="500"> 
+						<img id="mysImg" src="mys.png">
+					</div>
+					<div id="csharpIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="csharpImg" src="csharp.png">
+					</div>
+					<div id="pythonIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="pythonImg" src="python.png">
+					</div>
+					<div id="luaIcon" data-aos="zoom-in-up" data-aos-duration="500"> 
+						<img id="luaImg" src="lua.png">
+					</div>
+					<div id="powershellIcon" data-aos="zoom-in-up" data-aos-duration="500">
+						<img id="powershellImg" src="powershell.png">
+					</div>
+				</div>
+		</section>
+		<section id="contato">
+			<div id="transpBox"></div>
+				<h1 id="incrivelTitulo" data-aos="fade-left" data-aos-duration="500">Vamos fazer algo incrível!</h1>
+				<div id="linha6" data-aos="fade-right" data-aos-duration="1000"></div>
+				<div id="contatoSub">
+					<h1 data-aos="fade-right" data-aos-duration="500">Contato</h1>
+					<div id="linha7" data-aos="fade-left" data-aos-duration="1000"></div>
+					<p data-aos="zoom-in-right">Eu procuro oportunidades de crescimento, trago sede por aprendizado, atenção para detalhes, flexibilidade, adaptação, liderança e eficiência,
+					para que possamos trabalhar juntos e solucionar problemas de um jeito que otimize nossa respectiva experiência e conhecimento.
+					<br>Se parece bom, vamos combinar em como posso ser útil para você:</p>
+				</div>
+				<form>
+					<label for="nomeesobrenome"></label>
+					<input type="text" id="nomeesobrenome" class="inputPadrao" required placeholder="Seu nome e sobrenome"  data-aos="fade-left" data-aos-duration="500">
+
+					<label for="email"></label>
+					<input type="email" id="email" class="inputPadrao" required placeholder="seuemail@dominio.com"  data-aos="fade-right" data-aos-duration="500">
+
+					<label for="mensagem"></label></label>
+					<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required placeholder="Sua mensagem"  data-aos="fade-left" data-aos-duration="500"></textarea>
+
+					<input type="submit" value="Enviar" id="enviar" data-aos="fade-right" data-aos-duration="500">
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div id="iconWrapper">
+				<a href="https://www.facebook.com/nicolas.iannn/">
+				<div id="icon1"></div>
+				</a>
+				<a href="https://www.instagram.com/icolasnian_/">
+				<div id="icon2"></div>
+				</a>
+				<a href="https://github.com/icolasnian">
+				<div id="icon3"></div>
+				</a>
+				<a href="https://www.linkedin.com/in/ian-nicolas/">
+				<div id="icon4"></div>
+				</a>
+				<a href="https://codepen.io/n-colas-ian"> 
+				<div id="icon5"></div>
+				</a>
+			</div>
+			
+			<p class="copyright">Nicolas Ian</p> <u>&copy;2020<u>
+		</footer>
+
+	
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
